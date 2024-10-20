@@ -1,9 +1,15 @@
-import React from 'react'
+import HeroSection from "@/components/HeroSection";
+import PageDivider from "@/components/PageDivider";
+import ProjectsSection from "@/components/ProjectsSection";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <main className="">
+      <HeroSection />
+      <ProjectsSection />
+      <PageDivider />
+    </main>
+  );
+};
 
-export default Home
+export default Home;
