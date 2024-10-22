@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="rounded-md flex flex-row justify-between items-center gap-5 bg-gray-950 w-fit mx-auto px-5 py-2">
         <div className="size-3 bg-green-500 rounded-full"></div>
         <h4 className="text-white/50 font-semibold">
-          Available for a Kinds of Project
+          Available for all Kinds of Project
         </h4>
       </div>
       <div className="tracking-wide text-center font-bold md:text-4xl sm:text-3xl lg:text-5xl">
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <h1>User Experience</h1>
       </div>
       <p className="md:w-[60%] sm:w-[90%] lg:w-[40%] text-white/40 text-center sm:text-base lg:text-lg">
-        I specialize in transforming design into functional, high-performance
+        I specialize in transforming design into functional and high-performance
         web application. Let&apos;s discuss your next project
       </p>
       <div className="md:px-40 sm:px-10 w-fit sm:w-full items-center justify-center flex md:flex-row sm:flex-col lg:flex-row gap-5">
