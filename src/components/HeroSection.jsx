@@ -1,7 +1,7 @@
 import React from "react";
 import heroImage1 from "@/assets/images/memoji-computer.png";
-import arrowDown from "@/assets/icons/arrow-down.svg";
 import Image from "next/image";
+import { FaHandPeace, FaArrowDown  } from "react-icons/fa";
 const HeroSection = () => {
   return (
     <section className="sm:min-h-[80vh] md:pt-10 md:min-h-[60vh] min-h-screen flex items-center justify-center flex-col space-y-5">
@@ -32,14 +32,14 @@ const HeroSection = () => {
         items-center border border-white/50 hover:bg-white-/80 hover:text-gray-900 font-semibold hover:bg-white"
         >
           <span>Explore My Work</span>
-          <span className="text-xl font-bold">&darr;</span>
+          <FaArrowDown className="text-xl font-bold" />
         </button>
         <button
           className="lg:w-fit sm:w-full justify-center border border-white hover:bg-transparent hover:border hover:border-white
          hover:text-white flex flex-row gap-5 text-gray-900 bg-white px-5 py-2 transition-all 
          duration-300 font-semibold rounded-md items-center"
         >
-          <span>&#x1f44c;</span>
+          <FaHandPeace className="text-yellow-500" />
           <span>Let&apos;s Connect</span>
         </button>
       </div>
