@@ -1,18 +1,20 @@
 "use client";
 import Link from "next/link";
-import { useParams, usePathname } from "next/navigation";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
-  const pathname = usePathname();
+  const path = usePathname();
+
   const [activeLink, setActiveLink] = useState("home");
 
+  console.log(path);
   return (
     <nav className=" z-50 backdrop-blur-lg p-0 fixed rounded-full border border-white/50 top-3 left-0 right-0 bg-white/30 lg:w-[50%] sm:w-[95%] mx-auto h-12">
       <div className="flex flex-row items-center h-full p-0">
         <Link
-          href={"/"}
           onClick={() => setActiveLink("home")}
+          href={"/"}
           className={`nav-link ${
             activeLink == "home" &&
             "bg-white text-gray-900 hover:bg-white/90 hover:text-gray-900"
