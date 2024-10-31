@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import heroImage1 from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FaHandPeace } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
     <section className="sm:min-h-[80vh] md:pt-10 md:min-h-[60vh] min-h-screen flex items-center justify-center flex-col space-y-5">
@@ -21,10 +23,37 @@ const HeroSection = () => {
           Available for all Kinds of Project
         </h4>
       </div>
-      <div className="tracking-wide text-center font-bold md:text-4xl sm:text-3xl lg:text-5xl">
-        <h1>Building Exceptional</h1>
-        <h1>User Experience</h1>
+      <div className="sm:w-[80%]  lg:w-[60%] mx-auto font-semibold sm:text-3xl lg:text-5xl text-center tracking-wider ">
+        <TypeAnimation
+          sequence={[
+            // wait 1s before replacing "Mice" with "Hamsters"
+            "Crafting Digital Experiences, Where Code Meets Creativity",
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            "Building the Web, One Pixel at a Time",
+            1000,
+            "Innovative Solutions for Tomorrow's Challenges",
+            1000,
+            "Turning Ideas into Interactive Reality",
+            1000,
+            "Your Vision, My Code: Let's Build Something Great",
+            1000,
+            "Designing Seamless Journeys Through Code",
+            1000,
+            "Empowering Brands with Tailored Web Solutions",
+            1000,
+            "Code with Purpose: Transforming Concepts into Code",
+            1000,
+            "Innovative Web Development for a Dynamic World",
+            1000,
+            "Sculpting Digital Landscapes: The Art of Web Development",
+            1000,
+          ]}
+          wrapper="h1"
+          speed={50}
+          repeat={Infinity}
+        />
       </div>
+
       <p className="md:w-[60%] sm:w-[90%] lg:w-[40%] text-white/40 text-center sm:text-base lg:text-lg">
         I specialize in transforming design into functional and high-performance
         web application. Let&apos;s discuss your next project

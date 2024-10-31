@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import SectionHeader from "./SectionHeader";
 import Card from "./Card";
+import webcover from "@/assets/images/webcover.jpg";
+import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import {
   BiLogoJavascript,
   BiLogoHtml5,
@@ -15,6 +17,7 @@ import {
   BiLogoGithub,
   BiLogoTailwindCss,
 } from "react-icons/bi";
+import Image from "next/image";
 
 const tools = [
   {
@@ -78,6 +81,31 @@ const AboutMeSection = () => {
         desc={"learn more about who i am, what i do, and what inspires me"}
         content={"A Glimpse Into My World"}
       />
+      <div className="mb-16 flex sm:flex-col-reverse lg:flex-row items-center gap-5 w-full">
+        <div className="flex items-center justify-center relative sm:w-[90%] lg:w-[50%] mx-autoh-[400px]">
+          <div className="flex items-center justify-center absolute z-20 rounded-full size-32 p-2 bg-gradient-to-r from-emerald-500 to-sky-500">
+            <div className="[animation-duration:2s] animate-ping flex items-center justify-center absolute -z-10 rounded-full size-32 p-2 bg-gradient-to-r from-emerald-500 to-sky-500"></div>
+            <Image src={memojiAvatar5} alt="emoji image user" />
+          </div>
+          <Image
+            className="inset-0 w-full h-full rounded-lg shadow-md shadow-emerald-100"
+            src={webcover}
+            alt="web developer image cover"
+          />
+        </div>
+        <div className="sm:w-[90%] lg:w-[50%] mx-auto">
+          <h1 className="text-white sm:text-2xl lg:text-3xl font-bold tracking-wide sm:text-center lg:text-start mb-5">
+            Hello, I&apos;m Joseph Precious
+          </h1>
+          <p className="sm:text-sm lg:text-lg text-white/30 sm:text-center lg:text-justify tracking-wide">
+            As a seasoned web developer with a passion for innovation technology
+            solution, i bring over five (5) years of expertise in crafting
+            dynamic, user-centric digital experiences, With a strong foundation
+            in computer science and a keen eye for design, I excel at merging
+            technical skill with creative vision.
+          </p>
+        </div>
+      </div>
       <div className="mb-5">
         <Card>
           <div className="w-full">
