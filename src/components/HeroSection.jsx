@@ -67,15 +67,17 @@ const HeroSection = () => {
           <span>Explore My Work</span>
           <span className="text-xl font-bold">&darr;</span>
         </Link>
-        <button
-          href={"#contact"}
+        <Link
+          download={"joseph-chukwuka-cv"}
+          target="_blank"
+          href={"http://localhost:3000/joseph-chukwuka-cv.pdf"}
           className="lg:w-fit sm:w-full justify-center border border-white hover:bg-transparent hover:border hover:border-white
          hover:text-white flex flex-row gap-5 text-gray-900 bg-white px-5 py-2 transition-all 
          duration-300 font-semibold rounded-md items-center"
         >
           <FaDownload className="text-yellow-500" />
           <span>Download CV</span>
-        </button>
+        </Link>
       </div>
     </section>
   );
