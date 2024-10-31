@@ -3,7 +3,7 @@ import React from "react";
 import heroImage1 from "@/assets/images/memoji-computer.png";
 import Image from "next/image";
 import Link from "next/link";
-import { FaHandPeace } from "react-icons/fa";
+import { FaDownload, FaFileDownload, FaHandPeace } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
@@ -67,15 +67,15 @@ const HeroSection = () => {
           <span>Explore My Work</span>
           <span className="text-xl font-bold">&darr;</span>
         </Link>
-        <Link
+        <button
           href={"#contact"}
           className="lg:w-fit sm:w-full justify-center border border-white hover:bg-transparent hover:border hover:border-white
          hover:text-white flex flex-row gap-5 text-gray-900 bg-white px-5 py-2 transition-all 
          duration-300 font-semibold rounded-md items-center"
         >
-          <FaHandPeace className="text-yellow-500" />
-          <span>Let&apos;s Connect</span>
-        </Link>
+          <FaDownload className="text-yellow-500" />
+          <span>Download CV</span>
+        </button>
       </div>
     </section>
   );

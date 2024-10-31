@@ -123,7 +123,7 @@ const AboutMeSection = () => {
                     {tools.map((tool, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-2 border-2 border-white/50 rounded-xl px-5 py-3"
+                        className="flex items-center gap-2 border-2 border-white/50 rounded-xl px-5 py-1"
                       >
                         {tool.logo}
                         <h1 className="text-xl font-medium tracking-wide uppercase">
@@ -142,7 +142,7 @@ const AboutMeSection = () => {
                     {tools.reverse().map((tool, index) => (
                       <div
                         key={index}
-                        className="flex items-center gap-2 border-2 border-white/50 rounded-xl px-5 py-3"
+                        className="flex items-center gap-2 border-2 border-white/50 rounded-xl px-5 py-1"
                       >
                         {tool.logo}
                         <h1 className="text-xl font-medium tracking-wide uppercase">
