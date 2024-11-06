@@ -19,8 +19,8 @@ export const POST = async (req) => {
 
   const mailOptions = {
     from: email,
-    to: "josephchukwuka4@gmail.com",
-    subject: `Message from ${name}`,
+    to: "josephchukwuka4@proton.me",
+    subject: `Message from ${name} `,
     text: message,
   };
 
